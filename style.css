@@ -1,0 +1,173 @@
+/* <!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline-block</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .board {
+        width: 30vw;
+        height: 30vw;
+        border: 10px solid black;
+        margin: 20% auto 5%;
+        font-size: 0;
+      }
+      span {
+        display: inline-block;
+        width: calc(30vw / 2);
+        height: calc(30vw / 2);
+      }
+      span:nth-of-type(1) {
+        background-color: red;
+        margin: 0;
+      }
+      span:nth-of-type(2) {
+        background-color: white;
+        margin: 0;
+      }
+      span:nth-of-type(3) {
+        background-color: white;
+        margin: 0;
+      }
+      span:nth-of-type(4) {
+        background-color: red;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="board">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Kwadraty za pomocą inline-block</h1>
+  </body>
+</html>
+
+-------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Float: left</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .board {
+        width: 30vw;
+        height: 30vw;
+        margin: 20% auto 5%;
+        border: 10px solid black;
+      }
+      span {
+        float: left;
+        width: calc(30vw / 2);
+        height: calc(30vw / 2);
+      }
+      span:nth-last-of-type(1) {
+        background-color: red;
+      }
+      span:nth-last-of-type(2) {
+        background-color: white;
+        clear: both;
+      }
+      span:nth-last-of-type(3) {
+        background-color: white;
+      }
+      span:nth-last-of-type(4) {
+        background-color: red;
+      }
+      h1 {
+        text-align: center;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="board">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Kwadraty za pomocą float: left</h1>
+  </body>
+</html>  
+--------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Position: absolute</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .board {
+        width: 30vw;
+        height: 30vw;
+        margin: 20% auto 5%;
+        border: 10px solid black;
+        position: relative;
+      }
+      span {
+        position: absolute;
+        width: calc(30vw / 2);
+        height: calc(30vw / 2);
+      }
+      span:nth-of-type(1) {
+        left: 0;
+        top: 0;
+        background-color: red;
+      }
+      span:nth-of-type(2) {
+        bottom: 0;
+        right: 0;
+        background-color: white;
+      }
+      span:nth-of-type(3) {
+        bottom: 0;
+        left: 0;
+        background-color: white;
+      }
+      span:nth-of-type(4) {
+        bottom: 0;
+        right: 0;
+        background-color: red;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="board">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Kwadraty za pomocą position: absolute</h1>
+  </body>
+</html>  */
